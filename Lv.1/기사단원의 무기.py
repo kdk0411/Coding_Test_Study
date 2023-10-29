@@ -29,6 +29,6 @@ def solution_2(number, limit, power):
 
     dit = {}  # 이미 계산된 약수 개수를 저장할 딕셔너리 초기화
     ret = [count_divisors(i) for i in range(1, number + 1)]  # 1부터 number까지 각 숫자의 약수 개수를 계산하여 리스트에 저장
-    ret = [power if cnt > limit else cnt for cnt in ret]  # 약수 개수가 limit보다 큰 경우 power로 대체, 그렇지 않으면 원래 개수 유지
+    ret = [power if cnt > limit else cnt for cnt in ret]  # 약수 개수가 limit보다 큰 경우 power로 대체, 그렇지 않으면 원래 값 유지
     return sum(ret)  # 리스트에 있는 값들을 모두 더한 결과 반환
 

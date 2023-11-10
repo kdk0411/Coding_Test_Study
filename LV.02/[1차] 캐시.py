@@ -19,4 +19,5 @@ def solution(cacheSize, cities):
       else:
         cache.pop(0)
         cache.append(city)
+
   return ret

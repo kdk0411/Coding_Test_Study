@@ -3,8 +3,11 @@
 def Quick_Sort(arr):
   if len(arr)<=1:
     return arr
-  pivot = arr[len(arr)//2]
-  left, right, equal = [], [], []
+  pivot = arr[len(arr)//2] # 중앙에 위치한 값
+  left, right, equal = [], [], [] 
+  # left : Pivot보다 작은 그룹
+  # right : Pivot보다 큰 그룹
+  # equal : Pivot과 같은 값
   for i in arr:
     if i < pivot:
       left.append(i)

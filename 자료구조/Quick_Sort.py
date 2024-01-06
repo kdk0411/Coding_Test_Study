@@ -1,7 +1,7 @@
 # 평균적으로 O(n log n)의 시간복잡도를 가지고
 # 최악의 경우 O(n^2)의 시간복잡도를 가진다.
 def Quick_Sort(arr):
-  if len(arr)<=1:
+  if len(arr) < 2:
     return arr
   pivot = arr[len(arr)//2] # 중앙에 위치한 값
   left, right, equal = [], [], [] 

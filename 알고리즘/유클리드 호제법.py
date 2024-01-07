@@ -8,7 +8,7 @@
 def gcd(a, b):
   while b>0:
     a, b = b, a % b
-  return a
+    return a
 
 # 최소공배수
 # (최소 공배수 x 최대 공약수) = 'gcd^2 * m * n (m, n은 서로수) -> a * b

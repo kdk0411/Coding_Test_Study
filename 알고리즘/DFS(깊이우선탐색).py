@@ -26,7 +26,7 @@ def DFS_List(graph, start_node):
 DFS_List(graph, 'A')
 
 # 2. deque
-def DFS_depue(graph, start_node):
+def DFS_deque(graph, start_node):
   from collections import deque
 
   visited = []
@@ -42,7 +42,7 @@ def DFS_depue(graph, start_node):
       need_visited.extend(graph[node])
 
   return visited
-DFS_depue(graph, 'A')
+DFS_deque(graph, 'A')
 
 # 3. 재귀함수
 def DFS_Re(graph, start, visited = []):

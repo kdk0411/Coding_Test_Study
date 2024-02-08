@@ -1,0 +1,3 @@
+def solution(emergency):
+  arr = sorted(emergency, reverse=True)
+  return [arr.index(i) + 1 for i in emergency]

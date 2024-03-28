@@ -1,5 +1,4 @@
 def solution(participant, completion):
-  answer = ''
   participant.sort()
   completion.sort()
 
